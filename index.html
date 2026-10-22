@@ -1,0 +1,33 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="app-version" content="1.0"><title>Password · El juego</title>
+<link rel="stylesheet" href="css/app.css"><link rel="icon" href="icon-192.png"></head><body>
+<canvas id="plato"></canvas>
+<div id="carga"><div class="logo"><span>PASSWORD</span></div><div class="barra"><i id="cargaBar"></i></div><p>Cargando el plató…</p></div>
+<div id="menu" class="oculto">
+  <div id="menuLogo"><div class="logo grande"><span>PASSWORD</span></div><div class="sub">EL JUEGO · 3D</div></div>
+  <div id="menuBtns">
+    <button data-a="clasico"><b>Jugar · Clásico</b><small>El Mega Senha de Iker, IGUAL, en español</small></button>
+    <button data-a="programa"><b>Programa Password 3D</b><small>Parejas, ronda clasificatoria y ronda final con bote</small></button>
+    <button data-a="historia"><b>La historia de Password</b><small>El presentador te la cuenta (con mucho humor)</small></button>
+    <button data-a="reglas"><b>Reglas</b><small>Cómo se juega en el plató</small></button>
+    <button data-a="camara"><b>Cámara libre</b><small>Pasea por el plató con las grúas</small></button>
+    <button data-a="opciones"><b>Opciones</b><small>Volumen, cámaras, calidad, subtítulos</small></button>
+    <button data-a="creditos"><b>Créditos</b><small>Quién ha hecho qué</small></button>
+  </div><div id="ver">v1.0</div>
+</div>
+<div id="clasico" class="oculto"><canvas id="sc" width="960" height="720"></canvas><button class="volver" id="scSalir">✕ Menú</button></div>
+<div id="hud" class="oculto">
+  <div id="marcador"><div class="eq" id="eqA"><b>TÚ + LOLA</b><span id="ptA">0</span></div><div id="reloj">30</div><div class="eq" id="eqB"><b>MARCOS + PACO</b><span id="ptB">0</span></div></div>
+  <div id="escalera" class="oculto"></div>
+  <div id="pistas"></div>
+  <div id="resp"></div>
+  <div id="teclado"></div>
+  <div id="opciones3" class="oculto"></div>
+  <button class="volver" id="hudSalir">✕ Menú</button>
+</div>
+<div id="sub" class="oculto"><span class="tts">🔊 TTS</span><span id="subTxt"></span></div>
+<div id="panel" class="oculto"><div class="caja"><h2 id="pTit"></h2><div id="pCuerpo"></div><button id="pCerrar">Volver</button></div></div>
+<script src="js/palabras.js"></script><script src="js/frases.js"></script><script src="js/scratch.js"></script>
+<script type="module" src="js/app.js"></script>
+</body></html>
